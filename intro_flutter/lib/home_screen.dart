@@ -1,8 +1,8 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:intro_flutter/components/custom_card.dart';
-import 'package:intro_flutter/exemples/simple_change_notifier_example.dart';
-import 'package:intro_flutter/exemples/value_notifier_counter_screen.dart';
-import 'package:intro_flutter/pages/counter_screen_page.dart';
+import 'package:intro_flutter/exemples/questao_pratica.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,18 +20,14 @@ class HomeScreen extends StatelessWidget {
           children: [
             Expanded(
               child: ListView(
-                children: [CustomCard(
-                  title: 'Counter Screen', 
-                  description: 'Este é uma tela de contador interativo.', 
-                  icon: Icons.add_circle_outline, 
-                  destination: CounterScreenValueNotifier()
-                  ),
-                  CustomCard(
-                  title: 'ChangeNotifier Simples', 
-                  description: 'Este é uma tela de exemplo.', 
-                  icon: Icons.add_circle_outline, 
-                  destination: SimpleChangeNotifierExample()
-                  )
+                children: [
+                
+              CustomCard(
+              title: 'Formativa', 
+              description: 'Este é um countador - avaliação formativa', 
+              icon: Icons.add_circle_outline, 
+              destination: CounterScreen()
+              )
                 ],
               )
             )
